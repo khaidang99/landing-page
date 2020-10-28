@@ -481,17 +481,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 1200px;
+  margin-left: -15px;
 }
 
 .course .course-wrapper .course-list .course-item {
   width: 270px;
   border: 1px solid #E1E1E1;
   margin-bottom: 30px;
+  margin: 0 14px;
 }
 
 .course .course-wrapper .course-list .course-item .course-item-describe {

@@ -15,7 +15,6 @@
                 flex-grow: 1;
                 justify-content: center;
                 align-items: center;
-
                 img{
                     margin-bottom: 20px;
                 }
@@ -85,12 +84,22 @@
         }
         .course-list{
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             flex-wrap: wrap;
+            width: 1200px;
+            margin-left: -15px;
+
             .course-item{
                 width: 270px;
                 border: 1px solid #E1E1E1;
                 margin-bottom: 30px;
+                margin: 0 14px;
+                // &:first-child{
+                //     margin-left: 0;
+                // }
+                // &:last-child{
+                //     margin-right: 0;
+                // }
                 .course-item-describe{
                     padding: 20px 15px;
                     .course-rating-stars{
