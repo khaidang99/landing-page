@@ -35,3 +35,36 @@
         width: 100%;
     }
 }
+@media(max-width:768px){
+    .line-header-section{
+        height: 3px;
+        width: 100vw !important;
+        left: -10px;
+        transform: none !important;
+        position: relative;
+        .line-color{
+            left: 20px !important;
+            position: absolute;
+        }
+    }
+    .content-title-line{
+        width: 100vw !important;
+        left: -10px;
+        transform: none !important;
+        position: relative;
+        .line-color{
+            left: 20px !important;
+        }
+    }
+    .book-title-line{
+        height: 3px;
+        width: 100vw !important;
+        left: -10px;
+        transform: none !important;
+        position: relative;
+        .line-color{
+            left: 20px !important;
+            position: absolute;
+        }
+    }
+}

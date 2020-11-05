@@ -187,6 +187,11 @@
 }
 @media(max-width:1170px){
     .book{
+        .book-wrapper{
+            .book-title{
+                margin-left: 20px;
+            }
+        }
         margin-bottom: 60px;
         .book-list{
             height: 420px;

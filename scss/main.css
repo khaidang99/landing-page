@@ -229,6 +229,9 @@
   .book {
     margin-bottom: 60px;
   }
+  .book .book-wrapper .book-title {
+    margin-left: 20px;
+  }
   .book .book-list {
     height: 420px;
     overflow: hidden;
@@ -821,6 +824,7 @@
   }
   .course .course-wrapper .course-header .course-title {
     font-size: 40px;
+    margin-left: 20px;
   }
   .course .course-wrapper .course-header .line-header-section.sp {
     display: inline-block;
@@ -887,6 +891,43 @@
 @media (max-width: 1170px) {
   .container {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .line-header-section {
+    height: 3px;
+    width: 100vw !important;
+    left: -10px;
+    -webkit-transform: none !important;
+            transform: none !important;
+    position: relative;
+  }
+  .line-header-section .line-color {
+    left: 20px !important;
+    position: absolute;
+  }
+  .content-title-line {
+    width: 100vw !important;
+    left: -10px;
+    -webkit-transform: none !important;
+            transform: none !important;
+    position: relative;
+  }
+  .content-title-line .line-color {
+    left: 20px !important;
+  }
+  .book-title-line {
+    height: 3px;
+    width: 100vw !important;
+    left: -10px;
+    -webkit-transform: none !important;
+            transform: none !important;
+    position: relative;
+  }
+  .book-title-line .line-color {
+    left: 20px !important;
+    position: absolute;
   }
 }
 
