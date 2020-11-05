@@ -46,18 +46,36 @@ $(document).ready(function(){
 
 
     // slider book
-    var slick =  $('.book-list').slick({
-        infinite: true,
-        speed: 900,
-        slidesToScroll: 1,
-        slidesToShow: 4,
-        dots :true,
-        autoplay:true,
-        autoplaySpeed: 1500,
-        nextArrow:'<span class="next"><i class="fas fa-angle-right"></i></span>',
-        prevArrow:'<span class="prev"><i class="fas fa-angle-left"></i></span>',
-        slickPause:'<button class="my-btn" id="my-btn"><i class="fas fa-pause"></i></button>'
-    })
+    function checkPosition() {
+        if (window.matchMedia('(max-width: 1170px)').matches) {
+            var slick =  $('.book-list').slick({
+                infinite: true,
+                speed: 900,
+                slidesToScroll: 1,
+                slidesToShow: 4,
+                dots :true,
+                autoplay:true,
+                autoplaySpeed: 1500,
+                prevArrow: false,
+                nextArrow: false,
+                slickPause:'<button class="my-btn" id="my-btn"><i class="fas fa-pause"></i></button>'
+            })
+        } else {
+            var slick =  $('.book-list').slick({
+                infinite: true,
+                speed: 900,
+                slidesToScroll: 1,
+                slidesToShow: 4,
+                dots :true,
+                autoplay:true,
+                autoplaySpeed: 1500,
+                nextArrow:'<span class="next"><i class="fas fa-angle-right"></i></span>',
+                prevArrow:'<span class="prev"><i class="fas fa-angle-left"></i></span>',
+                slickPause:'<button class="my-btn" id="my-btn"><i class="fas fa-pause"></i></button>'
+            })
+        }
+    }
+    checkPosition();
     var btnBookPausePlay = document.createElement('button');
     var iconPause = document.createElement('i');
     iconPause.classList.add('fas');
@@ -147,4 +165,32 @@ $(document).ready(function(){
             $('.feel-slider').slick('slickPlay');
         }
     }
+
+
+    // menu
+    var switchMenu = false;
+    $('.menu-toggler').on('click',function(){
+        $(this).toggleClass('open');
+        $('.menu').toggleClass('open');
+    });
+
+    var lastScrollTop=0;
+    var navbar = document.getElementById('nav');
+
+    window.addEventListener("scroll",function(){
+        var scrollTop =window.pageYOffset;
+        var menu = document.getElementById('menu');
+
+        if(scrollTop >lastScrollTop){
+            if(menu.className != "menu open" )
+            {
+                navbar.style.top = "-100px";
+            }
+        }
+        else{
+            navbar.style.top = "0px"; 
+        }
+        lastScrollTop= scrollTop;
+    });
+
 })

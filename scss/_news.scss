@@ -8,9 +8,11 @@
         }
         .news-list{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+            flex-wrap: wrap;
             .news-item{
                 margin: 0 10px;
+                width: 277px;
                 &:first-child{
                     margin-left: 0;
                 }
@@ -89,6 +91,29 @@
                             text-decoration: none;
                             color: #C9923C;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .news{
+        .news-wrapper{
+            .news-list{
+                justify-content: center;
+                .news-item{
+                    width: 100%;
+                    margin: 10px 10px;
+                    img{
+                        width: 100%;
+                        height: 260px;
+                    }
+                    &:first-child{
+                        margin: 10px 10px;
+                    }
+                    &:last-child{
+                        margin: 10px 10px;
                     }
                 }
             }

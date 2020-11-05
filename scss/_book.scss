@@ -25,6 +25,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        position: relative;
+        width: 1170px;
         .slick-list{
             height: 350px;
             .book-item{
@@ -182,4 +184,31 @@
     border: none;
     font-size: 20px;
     outline:none;
+}
+@media(max-width:1170px){
+    .book{
+        margin-bottom: 60px;
+        .book-list{
+            height: 420px;
+            overflow: hidden;
+            width: 100%;
+            .slick-dots{
+                position: absolute;
+                left: calc(100vw/2);
+                transform: translateX(-50%);
+                bottom: 0;
+            }
+            .slick-list{
+                position: absolute;
+                width: 1170px;
+                left: 0;
+            }
+        }
+        
+    }
+}
+@media(max-width:768px){
+    .book{
+        margin-bottom: 20px;
+    }
 }

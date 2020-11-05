@@ -143,3 +143,37 @@
         }
     }
 }
+@media(max-width:576px){
+    .feel{
+        height: 650px;
+        .feel-slider{
+            .slider-item{
+                img{
+                    height: 650px;
+                }
+            }
+        }
+        .feel-container{
+            .feel-wrapper{
+                .feel-title{
+                    font-size: 38px;
+                    margin-bottom: 15px;
+                }
+                .line-header-section{
+                    margin-bottom: 15px;
+                }
+                .feel-description{
+                    .feel-content{
+                        margin-bottom: 15px;
+                    }
+                    .feel-content-sub{
+                        margin-bottom: 15px;
+                    }
+                    .feel-author-des{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

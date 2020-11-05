@@ -61,6 +61,7 @@
                         width: auto;
                         border: none;
                         border-radius: 20px;
+                        margin-bottom: 5px;
                         color: #fff;
                         i{
                             margin-right: 5px;
@@ -80,6 +81,32 @@
             .design{
                 margin-top: 20px;
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .footer{
+        .footer-container{
+            .footer-wrapper{
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                .company-description{
+                    flex-wrap: wrap;
+                    h5{
+                        margin-bottom: 8px;
+                    }
+                    .company-address{
+                        margin-bottom: 20px;
+                    }
+                }
+                .contact{
+                    flex-wrap: wrap;
+                    h4{
+                        margin-bottom: 15px;
+                    }
+                }
             }
         }
     }
