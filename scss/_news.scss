@@ -6,6 +6,9 @@
             font-weight: 300;
             margin-bottom: 30px;
         }
+        .line-header-section{
+            height: 3px;
+        }
         .news-list{
             display: flex;
             justify-content: flex-start;
@@ -100,6 +103,12 @@
 @media(max-width:576px){
     .news{
         .news-wrapper{
+            .news-title{
+                font-size: 42px;
+                font-weight: 300;
+                margin-top: 0;
+                margin-left: 10px;
+            }
             .news-list{
                 justify-content: center;
                 .news-item{

@@ -46,7 +46,9 @@ $(document).ready(function(){
 
 
     // slider book
+    
     function checkPosition() {
+        console.log("aaa")
         if (window.matchMedia('(max-width: 1170px)').matches) {
             var slick =  $('.book-list').slick({
                 infinite: true,
@@ -76,6 +78,20 @@ $(document).ready(function(){
         }
     }
     checkPosition();
+    
+    window.addEventListener('resize', function(e){
+        var nextBook = document.querySelectorAll('.book .next.slick-arrow');
+        var prevBook = document.querySelectorAll('.book .prev.slick-arrow');
+        if (window.matchMedia('(max-width: 1170px)').matches) {
+            nextBook[0].style.display = "none";
+            prevBook[0].style.display = "none";
+            
+        } else {
+            nextBook[0].style.display = "inline-block";
+            prevBook[0].style.display = "inline-block";
+        }
+    });
+
     var btnBookPausePlay = document.createElement('button');
     var iconPause = document.createElement('i');
     iconPause.classList.add('fas');

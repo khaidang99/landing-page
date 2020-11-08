@@ -13,7 +13,7 @@
         }
         .event-title-line{
             width: 100%;
-            height: 5px;
+            height: 3px;
             background-color: #E1E1E1;
             margin-bottom: 35px;
             .line-color{
@@ -69,7 +69,7 @@
             }
             .event-title-line{
                 width: 100%;
-                height: 5px;
+                height: 3px;
                 background-color: #E1E1E1;
                 margin-bottom: 35px;
                 .line-color{
@@ -182,15 +182,16 @@
     .event{
         height: auto;
         position: static;
+        margin-bottom: 40px;
         .event-header{
             display: inline-block;
             width: 100%;
             .event-title{
-                margin-left: 20px;
+                margin-left: 10px;
             }
             .event-title-line{
                 .line-color{
-                    margin-left: 20px;
+                    margin-left: 10px;
                 }
             }
         }
@@ -207,7 +208,7 @@
             .registation-wrap{
                 top: 50%;
                 transform: translateY(-50%);
-                left: 30px;
+                left: 23px;
             }
         }
         .event-container{

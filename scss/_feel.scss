@@ -143,6 +143,18 @@
         }
     }
 }
+@media(max-width:1170px){
+    .feel{
+        .feel-wrapper{
+            .line-header-section{
+                .line-color{
+                    left: 50% !important;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
 @media(max-width:576px){
     .feel{
         height: 650px;
