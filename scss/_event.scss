@@ -24,7 +24,7 @@
     .event-registation{
         position: absolute;
         left: 0;
-        width: 50%;
+        width: 45.6%;
         height: 100%;
         overflow: hidden;
         img{
@@ -33,13 +33,14 @@
         }
         .registation-wrap{
             position: absolute;
-            top: 55%;
+            top: 360px;
             right: 60px;
             color: #fff;
             width: 350px;
             .registation-date{
-                color: #DAB279;
+                color: #dab279;
                 font-weight: 300;
+                font-size: 14px;
                 margin: 0 0 20px 0;
             }
             .registation-content{
@@ -53,7 +54,8 @@
                 background-image: linear-gradient(to right , #C9923C,#D9B177);
                 border: none;
                 color: #fff;
-                font-weight: 300;
+                font-weight: bold;
+                font-size: 12px;
             }
         }
     }
@@ -61,24 +63,26 @@
         .event-right{
             width: 50%;
             float: right;
+            margin-top: 50px;
             .event-title{
-                margin-left: 70px;
                 font-size: 48px;
                 font-weight: 300;
                 margin-bottom: 25px;
+                line-height: 48px;
             }
             .event-title-line{
-                width: 100%;
+                width: calc(100% + (((55.3vw - ((100vw - 1170px)/2))) - 600px));
                 height: 3px;
                 background-color: #E1E1E1;
                 margin-bottom: 35px;
+                transform: translateX(calc((((55.3vw - ((100vw - 1170px)/2))) - 600px)* -1));
                 .line-color{
-                    margin-left: 70px;
+                    position: absolute;
+                    left: calc((((55.3vw - ((100vw - 1170px)/2))) - 600px));
                 }
             }
             .event-item{
                 display: flex;
-                margin-left: 70px;
                 padding-bottom: 30px;
                 border-bottom: 1px solid #d8d8d8;
                 margin-bottom: 25px;
@@ -119,7 +123,7 @@
                             background-image: linear-gradient(to right , #C9923C,#D9B177);
                             border: none;
                             color: #fff;
-                            font-weight: 400;
+                            font-weight: bold;
                             margin-right: 15px;
                         }
                         span{
@@ -131,8 +135,9 @@
                     .description-title{
                         margin-top: 0;
                         margin-bottom: 15px;
-                        font-size: 20px;
-                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 18px;
+                        font-weight: 300;
                     }
                     .description-content{
                         margin-top: 0;
@@ -221,7 +226,7 @@
                 }
                 .event-item{
                     margin: 5px 10px;
-                    margin-left: 10px;
+                    margin-bottom: 25px;
                 }
             }
         }

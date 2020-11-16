@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    $('.nav-item').on('click',function(){
+        // $(this).removeClass('avtive'); 
+        $('.nav-item').not(this).removeClass('active');
+        $(this).addClass('active');
+    })
+
+
+    //about
     var slick =  $('.about-slider-image').slick({
         infinite: true,
         speed: 900,

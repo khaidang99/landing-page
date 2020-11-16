@@ -7,9 +7,9 @@
         .category-wapper{
             display: flex;
             justify-content: space-between;
-            
             .category-item{
                 display: flex;
+                flex-basis: 0;
                 position: relative;
                 flex-direction: column;
                 flex-grow: 1;
@@ -55,9 +55,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            h2{
+            .course-title{
                 font-size: 48px;
                 font-weight: 300;
+                line-height: 48px;
                 padding: 0;
                 margin: 0;
             }
@@ -69,11 +70,12 @@
                 padding: 15px 12px;
                 border: none;
                 text-transform: uppercase;
-                font-size: 14px;
+                font-size: 12px;
                 margin-left: 10px;
                 background-color: transparent;
                 color: #898989;
-                font-weight: 600;
+                font-weight: bold;
+                font-family: 'Roboto';
                 i{
                     padding-right: 8px;
                 }
@@ -159,6 +161,7 @@
         .see-more{
             display: flex;
             align-items: center;
+            margin-top: 30px;
             .line-bot{
                 width: 90%;
                 border: 0;
@@ -186,6 +189,7 @@
 }
 @media(max-width:576px){
     .course{
+        margin-bottom: 40px;
         .course-category{
             height: 400px;
             margin-bottom: 20px;
@@ -195,6 +199,7 @@
                 .category-item{
                     width: 50%;
                     height: 200px;
+                    flex-basis: 50%;
                     &.active::after{
                         border: none;
                         border-bottom: none;
@@ -211,9 +216,12 @@
                 .course-title{
                     font-size: 40px;
                     margin-left: 10px;
+                    margin-top: 15px;
+                    line-height: 40px;
                 }
                 .line-header-section.sp{
                     display: inline-block;
+                    margin-top: 15px;
                 }
                 .course-header-options{
                     margin-bottom: 20px;
